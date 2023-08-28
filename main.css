@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .sobre, .shop {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 16px;
+    padding-top: 16px;
+    background-color: #fff;
+    color: #000;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+}
+
+h1 {
+    font-family: 'Respingo', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #6bafe09f;
+}
+
+nav {
+    padding: 24px 0;
+}
+
+nav li {
+    font-family: 'Halis GR', sans-serif;
+    list-style: none;
+    display: inline;
+    margin-right: 64px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #6bafe09f;
+}
+
+.menu-hamburguer {
+    width: 32px;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    max-width: 22px;
+    width: 100%;
+    display: block;
+    background-color: #000;
+    margin-bottom: 3px;
+}
+
+.sobre {
+    max-width: 100%;
+    margin-bottom: 90px;
+}
+
+h2 {
+    font-family: 'Respingo', sans-serif;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.sobre .sobre-loja{
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    font-size: 1.5em;
+}
+
+.sobre .sobre-loja img {
+    width: 480px;
+    border-radius: 15px;
+}
+
+h3 {
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #353434;
+}
+
+.shop {
+    max-width: 100%;
+    margin-bottom: 90px;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+}
+
+#produto {
+    padding: 16px;
+    max-width: 250px;
+    background-color: #ccc;
+    border-radius: 16px;
+}
+
+#produto img {
+    margin: 12px;
+    width: 200px;
+    height: 200px;
+}
+
+button {
+    text-transform: uppercase;
+    margin-top: 16px;
+    padding: 10px;
+    background-color: #6bafe09f;
+    border: 1px solid;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #6bafe09f;
+    padding: 24px;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    .sobre .sobre-loja{
+        display: block;
+        font-size: 1em;
+    }
+
+    .sobre .sobre-loja img {
+        width: 340px;
+        border-radius: 15px;
+        margin-bottom: 32px;
+    }
+
+    .shop {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+    }
+
+    #produto {
+        margin-bottom: 24px;
+    }
+
+    footer {
+        padding: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container {
+        max-width: 90%
+    }
+
+    nav {
+        padding: 0;
+    }
+    
+    .sobre .sobre-loja{
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .sobre .sobre-loja img {
+        width: 98%;
+        border-radius: 15px;
+        margin-bottom: 32px;
+    }
+
+    .shop {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        justify-items: center;
+    }
+
+    #produto {
+        padding: 16px;
+        max-width: 250px;
+        background-color: #ccc;
+        border-radius: 16px;
+    }
+
+    #produto {
+        width: 500px;
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (width:1180px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .shop {
+        display: grid;
+        grid-template-columns: repeat(4, 26%);
+    }
+}
